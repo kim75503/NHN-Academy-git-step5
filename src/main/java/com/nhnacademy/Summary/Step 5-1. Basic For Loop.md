@@ -18,7 +18,8 @@ for (초기화; 조건; 증감){
 5. 2번으로 돌아감
 
 ### 기본 예제:
-'''java
+
+"""java
 //1부터 5까지 출력
 for( int i = 1; i <= 5; i++){
     System.out.println(i);
@@ -29,9 +30,9 @@ for( int i = 1; i <= 5; i++){
 for ( int i = 0; i < 5; i++){
     System.out.println("반복 " + i);
 }
-'''
+"""
 ### 다양한 형태:
-
+"""java
 // 감소 (역순)
 for (int i = 5; i >= 1; i--) {
     System.out.println(i);  // 5, 4, 3, 2, 1
