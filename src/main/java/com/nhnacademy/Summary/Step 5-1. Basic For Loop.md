@@ -19,7 +19,7 @@ for (초기화; 조건; 증감){
 
 ### 기본 예제:
 
-"""java
+```java
 //1부터 5까지 출력
 for( int i = 1; i <= 5; i++){
     System.out.println(i);
@@ -30,9 +30,10 @@ for( int i = 1; i <= 5; i++){
 for ( int i = 0; i < 5; i++){
     System.out.println("반복 " + i);
 }
-"""
+```
+
 ### 다양한 형태:
-"""java
+```java
 // 감소 (역순)
 for (int i = 5; i >= 1; i--) {
     System.out.println(i);  // 5, 4, 3, 2, 1
@@ -47,9 +48,9 @@ for (int i = 0; i < 10; i += 2) {
 for (int i = 10; i < 15; i++) {
     System.out.println(i);  // 10, 11, 12, 13, 14
 }
-
+```
 ### 배열과 함께 사용:
-
+```java
 int[] scores = {90, 85, 78, 92};
 
 // 배열의 모든 요소 출력
@@ -63,9 +64,9 @@ for (int i = 0; i < scores.length; i++) {
     sum += scores[i];
 }
 System.out.println("합계: " + sum);  // 345
-
+```
 ### ArrayList와 함께 사용:
-
+```java
 ArrayList<String> names = new ArrayList<>();
 names.add("Alice");
 names.add("Bob");
@@ -79,11 +80,12 @@ for (int i = 0; i < names.size(); i++) {
 // 1. Alice
 // 2. Bob
 // 3. Charlie
-
+```
 ### for문 사용 시점:
 
-    상황            	사용 여부
-인덱스(번호)가 필요할 때	✅ 기본 for문
-특정 횟수만큼 반복할 때	    ✅ 기본 for문
-역순으로 순회할 때	       ✅ 기본 for문
-단순히 모든 요소 접근	    for-each 권장
+| 상황 | 사용 권장 |
+|------|------------|
+| 인덱스(번호)가 필요할 때 | ✅ 기본 for문 |
+| 특정 횟수만큼 반복할 때 | ✅ 기본 for문 |
+| 역순으로 순회할 때 | ✅ 기본 for문 |
+| 단순히 모든 요소 접근 | for-each 권장 |
